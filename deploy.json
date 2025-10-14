@@ -1,0 +1,10 @@
+{
+  "name": "deploy",
+  "version": "1.0.0",
+  "scripts": {
+    "deploy:netlify": "npm run build && npx netlify-cli deploy --prod --dir=dist",
+    "deploy:vercel": "npm run build && npx vercel --prod",
+    "deploy:surge": "npm run build && npx surge ./dist"
+  },
+  "description": "Scripts de déploiement pour MCI"
+}
