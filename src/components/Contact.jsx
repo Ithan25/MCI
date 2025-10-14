@@ -160,50 +160,13 @@ const Contact = () => {
             "violates the following Content Security Policy"
           ));
 
-      if (isCSPError) {
-        console.log(
-          "🔒 Erreur CSP détectée - utilisation du fallback mailto automatique"
-        );
-        // Pas d'alerte, utilisation directe du fallback
-      } else {
-        // Afficher l'erreur pour les autres types d'erreurs
-        alert(
-          `Erreur EmailJS: ${
-            error.message || error.text || error
-          }\n\nUtilisation du client email par défaut.`
-        );
-      }
-
-      // Fallback automatique : ouvrir le client email
-      const subject = encodeURIComponent(
-        formData.subject || "Contact depuis le site web"
+      // Afficher un message d'erreur simple
+      alert(
+        "Impossible d'envoyer votre message automatiquement.\n\n" +
+        "Vous pouvez nous contacter directement à :\n" +
+        "contact@moncoachinformatique.fr\n\n" +
+        "Ou essayez à nouveau dans quelques minutes."
       );
-      const body = encodeURIComponent(
-        `Nom : ${formData.name}\n` +
-          `Email : ${formData.email}\n` +
-          `Téléphone : ${formData.phone}\n\n` +
-          `Message :\n${formData.message}`
-      );
-
-      const mailtoLink = `mailto:contact@moncoachinformatique.fr?subject=${subject}&body=${body}`;
-
-      // Utiliser le fallback automatiquement
-      window.location.href = mailtoLink;
-
-      // Afficher le message de succès même avec le fallback
-      setIsSubmitted(true);
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        subject: "",
-        message: "",
-      });
-
-      // Reset success message after 5 seconds
-      setTimeout(() => {
-        setIsSubmitted(false);
-      }, 5000);
     }
   };
 
