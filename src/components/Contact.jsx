@@ -163,9 +163,9 @@ const Contact = () => {
       // Afficher un message d'erreur simple
       alert(
         "Impossible d'envoyer votre message automatiquement.\n\n" +
-        "Vous pouvez nous contacter directement à :\n" +
-        "contact@moncoachinformatique.fr\n\n" +
-        "Ou essayez à nouveau dans quelques minutes."
+          "Vous pouvez nous contacter directement à :\n" +
+          "contact@moncoachinformatique.fr\n\n" +
+          "Ou essayez à nouveau dans quelques minutes."
       );
     }
   };
