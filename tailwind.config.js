@@ -6,7 +6,7 @@ export default {
       fontFamily: {
         poppins: [
           "-apple-system",
-          "BlinkMacSystemFont", 
+          "BlinkMacSystemFont",
           "Segoe UI",
           "Roboto",
           "Helvetica Neue",
@@ -17,7 +17,7 @@ export default {
         "open-sans": [
           "-apple-system",
           "BlinkMacSystemFont",
-          "Segoe UI", 
+          "Segoe UI",
           "Roboto",
           "Helvetica Neue",
           "system-ui",
