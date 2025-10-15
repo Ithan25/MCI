@@ -45,7 +45,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-20 relative grid-overlay geometric-shapes decorative-lines"
+      className="py-20 bg-gradient-to-br from-gray-50 to-white relative"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -189,8 +189,8 @@ const About = () => {
             </h3>
 
             <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="bg-primary rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <div className="text-center bg-white rounded-xl p-6 shadow-lg">
+                <div className="bg-primary w-16 h-16 flex items-center justify-center mx-auto mb-4 rounded-[.5vw]">
                   <span className="font-poppins font-bold text-2xl text-white">
                     1
                   </span>
@@ -204,8 +204,8 @@ const About = () => {
                 </p>
               </div>
 
-              <div className="text-center">
-                <div className="bg-accent rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <div className="text-center bg-white rounded-[.5vw] p-6 shadow-lg">
+                <div className="bg-accent rounded-[.5vw] w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <span className="font-poppins font-bold text-2xl text-white">
                     2
                   </span>
@@ -218,8 +218,8 @@ const About = () => {
                 </p>
               </div>
 
-              <div className="text-center">
-                <div className="bg-primary rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <div className="text-center bg-white rounded-[.5vw] p-6 shadow-lg">
+                <div className="bg-primary w-16 h-16 flex items-center justify-center mx-auto mb-4 rounded-[.5vw]">
                   <span className="font-poppins font-bold text-2xl text-white">
                     3
                   </span>

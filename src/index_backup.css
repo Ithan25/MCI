@@ -1,0 +1,257 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Open Sans", system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  --color-primary: #ea580c;
+  --color-accent: #f59e0b;
+  --color-gray-light: #fff7ed;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8f9fa 0%, #f1f3f4 100%);
+  color: #1f2937;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.font-open-sans {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Header fixe */
+header {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  z-index: 50 !important;
+}
+
+main {
+  padding-top: 80px;
+}
+
+/* Header mobile - éviter le débordement */
+@media (max-width: 767px) {
+  header {
+    width: 100vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  header > div {
+    max-width: 100vw !important;
+    margin: 0 !important;
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+}
+
+/* Button styles */
+.btn-primary {
+  background: #ea580c;
+  color: white;
+  font-weight: 500;
+  padding: 12px 24px;
+  border-radius: 12px !important;
+  transition: background-color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #dc2626;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #ea580c;
+  border: 2px solid #ea580c;
+  font-weight: 500;
+  padding: 10px 22px;
+  border-radius: 12px !important;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background: #ea580c;
+  color: white;
+}
+
+/* Glass effect simple avec arrondis */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px !important;
+}
+
+/* Card shadow avec arrondis */
+.card-shadow {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.2s ease;
+  border-radius: 16px !important;
+}
+
+.card-shadow:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Arrondis globaux pour les éléments */
+.bg-white,
+.bg-gray-50,
+.bg-accent,
+form,
+input,
+select,
+textarea,
+button {
+  border-radius: 12px;
+}
+
+/* Les éléments bg-primary restent carrés (pas d'arrondis) par défaut */
+
+/* Correction débordement global */
+.glass-effect,
+.card-shadow,
+.grid > div {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Mobile optimization */
+@media (max-width: 767px) {
+  main {
+    padding-top: 70px;
+  }
+
+  .container,
+  .max-w-6xl,
+  .max-w-4xl,
+  .max-w-7xl {
+    max-width: 100vw !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .glass-effect,
+  .card-shadow {
+    padding: 1rem !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .grid {
+    gap: 1rem !important;
+  }
+
+  .grid.lg\\:grid-cols-2 {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Desktop containers */
+@media (min-width: 768px) {
+  .container,
+  .max-w-6xl,
+  .max-w-4xl,
+  .max-w-7xl {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+}
+
+/* Formulaire et blocs - pas de débordement */
+.glass-effect,
+.card-shadow {
+  box-sizing: border-box !important;
+  overflow: hidden;
+}
+
+/* Contact section - éviter le décalage horizontal */
+#contact .grid {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+#contact .grid > div {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* About section - conteneurs équilibrés */
+#about .grid {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+#about .grid > div {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Background subtil avec motif */
+.bg-gradient-to-br.from-gray-50.to-white {
+  background: linear-gradient(135deg, #f9fafb 0%, #ffffff 50%, #f3f4f6 100%);
+  position: relative;
+}
+
+.bg-gradient-to-br.from-gray-50.to-white::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.03;
+  background-image: radial-gradient(
+    circle at 25% 25%,
+    #ea580c 1px,
+    transparent 1px
+  );
+  background-size: 60px 60px;
+  pointer-events: none;
+}

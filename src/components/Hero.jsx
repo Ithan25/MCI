@@ -27,7 +27,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="pt-24 pb-16 min-h-screen flex items-center relative overflow-hidden floating-particles"
+      className="lg:pt-20 pb-16 min-h-screen flex items-center relative overflow-hidden floating-particles"
     >
       {/* Éléments décoratifs flottants */}
       <div className="absolute inset-0 pointer-events-none">
@@ -49,8 +49,8 @@ const Hero = () => {
         ></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 pt-16 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="w-full max-w-7xl mx-auto px-4 pt-16 sm:px-6 lg:px-8 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-12 items-center w-full">
           {/* Hero Content */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -140,7 +140,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1, duration: 0.6 }}
-          className="mt-20 grid md:grid-cols-3 gap-8"
+          className="mt-12 sm:mt-20 grid md:grid-cols-3 gap-6 sm:gap-8"
         >
           {advantages.map((advantage, index) => (
             <motion.div

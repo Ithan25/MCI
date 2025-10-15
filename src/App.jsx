@@ -92,7 +92,7 @@ function App() {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0 }}
             onClick={scrollToTop}
-            className="fixed bottom-8 right-8 bg-primary text-white p-3 rounded-full shadow-lg hover:bg-primary-600 transition-colors duration-200 z-50"
+            className="fixed bottom-8 right-8 bg-primary text-white p-3 shadow-lg hover:bg-primary-600 transition-colors duration-200 z-50 rounded-[.5vw]"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >

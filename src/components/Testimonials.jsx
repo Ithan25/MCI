@@ -44,12 +44,14 @@ const Testimonials = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1, duration: 0.6 }}
-                className="glass-effect card-shadow p-6 relative group"
+                className="bg-white rounded-xl shadow-lg p-6 relative group"
               >
                 {/* Quote Icon */}
-                <div className="absolute -top-4 left-6">
-                  <div className="bg-primary rounded-full p-3 shadow-lg">
-                    <Quote className="h-6 w-6 text-white" />
+                <div className="absolute -top-4 left-6 rounded-[.5vw]">
+                  <div className="bg-primary p-3 shadow-lg rounded-[.5vw]">
+                    <div className="text-white text-2xl font-bold leading-none">
+                      "
+                    </div>
                   </div>
                 </div>
 

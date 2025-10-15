@@ -196,32 +196,32 @@ const Contact = () => {
       id="contact"
       className="py-20 bg-gradient-to-br from-gray-light to-white relative floating-particles geometric-shapes"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-12 lg:mb-16"
         >
           <h2 className="font-poppins font-bold text-3xl md:text-4xl text-gray-900 mb-4">
             Contactez-moi
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto px-4">
             Vous avez un projet de formation ? Une question sur mes services ?
             N'hésitez pas à me contacter pour un devis gratuit et personnalisé.
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="lg:grid lg:grid-cols-2 gap-8">
           {/* Contact Form */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="glass-effect card-shadow p-8"
+            className="bg-white rounded-xl shadow-lg p-6 mb-4 lg:mb-0"
           >
             <h3 className="font-poppins font-semibold text-2xl text-gray-900 mb-6">
               Demande de devis gratuit

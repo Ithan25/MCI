@@ -104,7 +104,7 @@ const Services = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.6 }}
-              className="glass-effect card-shadow overflow-hidden group ripple-effect"
+              className="glass-effect card-shadow overflow-hidden group ripple-effect rounded-[2vw]"
             >
               {/* Card Header */}
               <div className="bg-gradient-to-br from-primary to-primary-600 p-6 text-white">

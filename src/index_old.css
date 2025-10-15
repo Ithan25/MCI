@@ -28,12 +28,7 @@ body {
   overflow-x: hidden;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
@@ -107,14 +102,12 @@ main {
 
 /* Card shadow */
 .card-shadow {
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   transition: box-shadow 0.2s ease;
 }
 
 .card-shadow:hover {
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 /* Mobile optimization */
@@ -146,26 +139,5 @@ main {
 
   .grid.lg\\:grid-cols-2 {
     grid-template-columns: 1fr !important;
-  }
-
-  /* Hero section mobile */
-  #home {
-    overflow-x: hidden !important;
-  }
-
-  #home .max-w-7xl {
-    width: 100% !important;
-    max-width: 100vw !important;
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-  }
-
-  /* Prevent horizontal overflow */
-  body {
-    overflow-x: hidden !important;
-  }
-
-  html {
-    overflow-x: hidden !important;
   }
 }
