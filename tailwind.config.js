@@ -16,7 +16,7 @@ export default {
         ],
         "open-sans": [
           "Open Sans",
-          "-apple-system", 
+          "-apple-system",
           "BlinkMacSystemFont",
           "Segoe UI",
           "Roboto",

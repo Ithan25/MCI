@@ -42,7 +42,12 @@ h6 {
 
 .font-poppins,
 .font-poppins *,
-h1, h2, h3, h4, h5, h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 [class*="font-poppins"] {
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif !important;
@@ -50,7 +55,10 @@ h1, h2, h3, h4, h5, h6,
 
 .font-open-sans,
 .font-open-sans *,
-body, p, span, div,
+body,
+p,
+span,
+div,
 [class*="font-open-sans"] {
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif !important;
@@ -58,13 +66,25 @@ body, p, span, div,
 
 /* Force polices globalement */
 * {
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif !important;
 }
 
 /* Titres avec Poppins */
-h1, h2, h3, h4, h5, h6, 
-.text-xl, .text-2xl, .text-3xl, .text-4xl, .text-5xl, .text-6xl {
-  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.text-xl,
+.text-2xl,
+.text-3xl,
+.text-4xl,
+.text-5xl,
+.text-6xl {
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif !important;
 }
 
 /* Header fixe */
