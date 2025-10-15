@@ -87,7 +87,7 @@ const About = () => {
             <div className="glass-effect p-6 mb-8">
               <h3 className="font-poppins font-semibold text-xl text-gray-900 mb-4 flex items-center">
                 <Award className="h-6 w-6 text-primary mr-3" />
-                Qualifications & Certifications
+                Qualifications
               </h3>
               <ul className="space-y-3">
                 {qualifications.map((qualification, index) => (
@@ -157,7 +157,7 @@ const About = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: index * 0.1, duration: 0.5 }}
-                    className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow duration-300 text-center"
+                    className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow duration-300 text-center flex flex-col items-center"
                   >
                     <div className="bg-primary-50 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-3">
                       <value.icon className="h-6 w-6 text-primary" />
