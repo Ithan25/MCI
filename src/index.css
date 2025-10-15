@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  font-family: "Open Sans", system-ui, -apple-system, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", system-ui, Arial, sans-serif;
   line-height: 1.6;
   font-weight: 400;
   --color-primary: #ea580c;
@@ -24,8 +24,7 @@ body {
   min-height: 100vh;
   background: linear-gradient(135deg, #f8f9fa 0%, #f1f3f4 100%);
   color: #1f2937;
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", system-ui, Arial, sans-serif;
   overflow-x: hidden;
 }
 
@@ -35,42 +34,16 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", system-ui, Arial, sans-serif;
-  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", system-ui, Arial, sans-serif;
+  font-weight: 700;
 }
 
-.font-poppins,
-.font-poppins *,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-[class*="font-poppins"] {
-  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", system-ui, Arial, sans-serif !important;
-}
-
-.font-open-sans,
-.font-open-sans *,
-body,
-p,
-span,
-div,
-[class*="font-open-sans"] {
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", system-ui, Arial, sans-serif !important;
-}
-
-/* Force polices avec Google Fonts et fallback système */
+/* Polices système élégantes avec plus de graisse pour les titres */
 * {
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", system-ui, Arial, sans-serif !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", system-ui, Arial, sans-serif !important;
 }
 
-/* Titres avec police Poppins */
+/* Titres avec police système plus grasse */
 h1,
 h2,
 h3,
@@ -83,9 +56,8 @@ h6,
 .text-4xl,
 .text-5xl,
 .text-6xl {
-  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", system-ui, Arial, sans-serif !important;
-  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", system-ui, Arial, sans-serif !important;
+  font-weight: 800;
 }
 
 /* Header fixe */

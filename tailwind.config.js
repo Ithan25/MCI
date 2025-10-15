@@ -4,19 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        poppins: [
-          "Poppins",
-          "-apple-system",
-          "BlinkMacSystemFont",
-          "Segoe UI",
-          "Roboto",
-          "Helvetica Neue",
-          "system-ui",
-          "Arial",
-          "sans-serif",
-        ],
-        "open-sans": [
-          "Open Sans",
+        sans: [
           "-apple-system",
           "BlinkMacSystemFont",
           "Segoe UI",
