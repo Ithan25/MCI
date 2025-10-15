@@ -38,7 +38,7 @@ const Header = () => {
               <img
                 src="/logo-mci.svg"
                 alt="Logo MCI"
-                className="h-10 w-10 sm:h-8 sm:w-8 object-contain"
+                className="h-6 w-10 sm:h-8 sm:w-8 object-contain"
               />
             </div>
             <div className="hidden sm:block">
