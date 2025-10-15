@@ -13,7 +13,10 @@ if (fs.existsSync(htmlPath)) {
   // Rechercher et remplacer ou ajouter la CSP
   if (html.includes('http-equiv="Content-Security-Policy"')) {
     // Remplacer la CSP existante
-    html = html.replace(/content="[^"]*"/, `content="${cspContent}"`);
+    html = html.replace(
+      /http-equiv="Content-Security-Policy"\s+content="[^"]*"/g,
+      `http-equiv="Content-Security-Policy" content="${cspContent}"`
+    );
   } else {
     // Ajouter la CSP si elle n'existe pas
     const metaVp =
@@ -21,6 +24,12 @@ if (fs.existsSync(htmlPath)) {
     const cspMeta = `    <meta http-equiv="Content-Security-Policy" content="${cspContent}" />`;
     html = html.replace(metaVp, metaVp + "\n" + cspMeta);
   }
+
+  // Correction spéciale : si la CSP s'est retrouvée dans le viewport, la corriger
+  html = html.replace(
+    /name="viewport" content="[^"]*default-src[^"]*"/g,
+    'name="viewport" content="width=device-width, initial-scale=1.0"'
+  );
 
   fs.writeFileSync(htmlPath, html);
   console.log("✅ CSP correctement configurée pour EmailJS en production");
