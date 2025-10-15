@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logoMci from "../assets/logo-mci.svg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,7 +36,7 @@ const Header = () => {
           <div className="flex items-center space-x-2 sm:space-x-3 flex-shrink-0">
             <div className="bg-white p-1.5 sm:p-2 rounded-lg shadow-sm">
               <img
-                src={logoMci}
+                src="/logo-mci.svg"
                 alt="Logo MCI"
                 className="h-6 w-6 sm:h-8 sm:w-8 object-contain"
               />

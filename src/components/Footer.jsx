@@ -8,7 +8,7 @@ import {
   ExternalLink,
   Heart,
 } from "lucide-react";
-import logoMci from "../assets/logo-mci.svg";
+
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -66,7 +66,7 @@ const Footer = () => {
           >
             <div className="flex items-center space-x-3 mb-4">
               <div className="bg-white p-1 rounded-lg">
-                <img src={logoMci} alt="Logo MCI" className="h-10 w-10" />
+                <img src="/logo-mci.svg" alt="Logo MCI" className="h-10 w-10" />
               </div>
               <div>
                 <h3 className="font-poppins font-bold text-xl">
