@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         poppins: [
+          "Poppins",
           "-apple-system",
           "BlinkMacSystemFont",
           "Segoe UI",
@@ -15,6 +16,7 @@ export default {
           "sans-serif",
         ],
         "open-sans": [
+          "Open Sans",
           "-apple-system",
           "BlinkMacSystemFont",
           "Segoe UI",
