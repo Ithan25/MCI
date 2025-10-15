@@ -189,7 +189,7 @@ const About = () => {
             </h3>
 
             <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center bg-white rounded-xl p-6 shadow-lg">
+              <div className="text-center bg-white rounded-[.5vw] p-6 shadow-lg flex flex-col items-center">
                 <div className="bg-primary w-16 h-16 flex items-center justify-center mx-auto mb-4 rounded-[.5vw]">
                   <span className="font-poppins font-bold text-2xl text-white">
                     1
@@ -204,7 +204,7 @@ const About = () => {
                 </p>
               </div>
 
-              <div className="text-center bg-white rounded-[.5vw] p-6 shadow-lg">
+              <div className="text-center bg-white rounded-[.5vw] p-6 shadow-lg flex flex-col items-center">
                 <div className="bg-accent rounded-[.5vw] w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <span className="font-poppins font-bold text-2xl text-white">
                     2
@@ -218,7 +218,7 @@ const About = () => {
                 </p>
               </div>
 
-              <div className="text-center bg-white rounded-[.5vw] p-6 shadow-lg">
+              <div className="text-center bg-white rounded-[.5vw] p-6 shadow-lg flex flex-col items-center">
                 <div className="bg-primary w-16 h-16 flex items-center justify-center mx-auto mb-4 rounded-[.5vw]">
                   <span className="font-poppins font-bold text-2xl text-white">
                     3

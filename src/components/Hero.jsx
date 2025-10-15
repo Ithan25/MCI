@@ -122,7 +122,7 @@ const Hero = () => {
             className="relative"
           >
             <div className="bg-gradient-to-br from-primary to-primary-600 rounded-3xl p-8 shadow-2xl">
-              <div className="bg-white rounded-2xl p-8 text-center">
+              <div className="bg-white rounded-2xl p-8 text-center flex flex-col items-center">
                 <Monitor className="h-24 w-24 text-primary mx-auto mb-6" />
                 <h3 className="font-poppins font-semibold text-xl text-gray-900 mb-4">
                   Formation Personnalisée

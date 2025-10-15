@@ -111,7 +111,7 @@ const Services = () => {
                 <div className="bg-white/20 rounded-full w-12 h-12 flex items-center justify-center mb-4">
                   <service.icon className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="font-poppins font-semibold text-xl mb-2">
+                <h3 className="font-poppins font-semibold text-xl mb-2 text-center">
                   {service.title}
                 </h3>
               </div>
