@@ -17,7 +17,13 @@ const Header = () => {
   const scrollToSection = (href) => {
     const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      const headerHeight = 80; // Height of fixed header
+      const elementPosition = element.offsetTop - headerHeight;
+      
+      window.scrollTo({
+        top: elementPosition,
+        behavior: "smooth"
+      });
     }
     setIsMenuOpen(false);
   };
@@ -36,18 +42,13 @@ const Header = () => {
             <div className="bg-white p-1 rounded-lg shadow-md">
               <img src={logoMci} alt="Logo MCI" className="h-10 w-10" />
             </div>
-            <div className="hidden sm:block">
-              <h1 className="font-poppins font-bold text-xl text-gray-900">
+            <div>
+              <h1 className="font-poppins font-bold text-lg sm:text-xl text-gray-900">
                 Mon Coach Informatique
               </h1>
-              <p className="text-sm text-gray-600 font-medium">
+              <p className="text-xs sm:text-sm text-gray-600 font-medium">
                 L'informatique, simple comme un clic
               </p>
-            </div>
-            <div className="block sm:hidden">
-              <h1 className="font-poppins font-bold text-lg text-gray-900">
-                MCI
-              </h1>
             </div>
           </motion.div>
 
@@ -66,16 +67,6 @@ const Header = () => {
               </motion.button>
             ))}
           </nav>
-
-          {/* CTA Button Desktop */}
-          <motion.button
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            onClick={() => scrollToSection("#contact")}
-            className="hidden md:block btn-primary"
-          >
-            Me contacter
-          </motion.button>
 
           {/* Mobile menu button */}
           <button
