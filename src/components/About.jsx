@@ -126,7 +126,7 @@ const About = () => {
             className="space-y-8"
           >
             {/* Profile Card */}
-            <div className="bg-gradient-to-br from-primary to-primary-600 rounded-2xl p-8 text-white text-center">
+            <div className="bg-gradient-to-br from-primary to-primary-600 rounded-2xl p-8 text-white text-center flex flex-col items-center">
               <div className="bg-white/20 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-6">
                 <User className="h-12 w-12 text-white" />
               </div>
