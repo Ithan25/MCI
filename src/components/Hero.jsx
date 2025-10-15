@@ -27,7 +27,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="lg:pt-12 pb-16 min-h-screen flex items-center relative overflow-hidden floating-particles"
+      className="lg:pt-10 pb-16 min-h-screen flex items-center relative overflow-hidden floating-particles"
     >
       {/* Éléments décoratifs flottants */}
       <div className="absolute inset-0 pointer-events-none">
