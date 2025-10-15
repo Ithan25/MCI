@@ -961,3 +961,109 @@ html {
   background-size: 200% 100%;
   animation: shimmer 3s ease-in-out infinite;
 }
+
+/* ==========================================
+   OPTIMISATIONS MOBILE - PERFORMANCE
+   ========================================== */
+
+@media (max-width: 768px) {
+  /* Désactivation de toutes les animations sur mobile pour la performance */
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /* Background simplifié pour mobile */
+  body {
+    background: linear-gradient(135deg, #f5f1eb 0%, #e8dcc6 100%) !important;
+    background-attachment: scroll !important;
+    animation: none !important;
+  }
+
+  body::before {
+    display: none !important;
+  }
+
+  /* Désactivation des particules flottantes sur mobile */
+  .floating-particles::before,
+  .floating-particles::after {
+    display: none !important;
+  }
+
+  /* Désactivation des formes géométriques sur mobile */
+  .geometric-shapes::before,
+  .geometric-shapes::after {
+    display: none !important;
+  }
+
+  /* Désactivation des lignes décoratives sur mobile */
+  .decorative-lines::before,
+  .decorative-lines::after {
+    display: none !important;
+  }
+
+  /* Simplification des effets de lueur */
+  .glow-effect::before {
+    display: none !important;
+  }
+
+  /* Désactivation des ondulations */
+  .ripple-effect::after {
+    display: none !important;
+  }
+
+  /* Simplification de l'effet shimmer */
+  .shimmer-effect {
+    animation: none !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
+
+  /* Header mobile optimisé */
+  header {
+    backdrop-filter: blur(5px) !important;
+  }
+
+  /* Buttons simplifiés */
+  .btn-primary:hover,
+  .btn-secondary:hover,
+  .btn-outline:hover {
+    transform: none !important;
+  }
+
+  /* Cards simplifiées */
+  .card-shadow:hover {
+    transform: none !important;
+  }
+
+  /* Préférences de performance */
+  * {
+    will-change: auto !important;
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+}
+
+/* Réduction d'animations pour les utilisateurs qui préfèrent moins de mouvement */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  body::before {
+    display: none !important;
+  }
+
+  .floating-particles::before,
+  .floating-particles::after {
+    display: none !important;
+  }
+}
