@@ -107,7 +107,7 @@ const Services = () => {
               className="glass-effect card-shadow overflow-hidden group ripple-effect rounded-[2vw]"
             >
               {/* Card Header */}
-              <div className="bg-gradient-to-br from-primary to-primary-600 p-6 text-white">
+              <div className="bg-gradient-to-br from-primary to-primary-600 p-6 text-white rounded-[2vw]">
                 <div className="bg-white/20 rounded-full w-12 h-12 flex items-center justify-center mb-4">
                   <service.icon className="h-6 w-6 text-white" />
                 </div>

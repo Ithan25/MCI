@@ -148,9 +148,9 @@ const Hero = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.2 + index * 0.2, duration: 0.6 }}
-              className="text-center bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300"
+              className="text-center flex flex-col items-center justify-center bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300"
             >
-              <div className="bg-accent-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <div className="bg-accent-100 mb-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <advantage.icon className="h-8 w-8 text-accent" />
               </div>
               <h3 className="font-poppins font-semibold text-lg text-gray-900 mb-2">
