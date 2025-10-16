@@ -57,7 +57,7 @@ const Header = () => {
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="text-gray-700 hover:text-orange-600 font-medium transition-colors"
+                className="text-gray-700 hover:text-primary font-medium transition-colors"
               >
                 {item.name}
               </button>
@@ -89,7 +89,7 @@ const Header = () => {
             ))}
             <button
               onClick={() => scrollToSection("#contact")}
-              className="w-full mt-4 bg-orange-600 text-white py-2 px-4 rounded-lg hover:bg-orange-700"
+              className="w-full mt-4 btn-primary"
             >
               Me contacter
             </button>
