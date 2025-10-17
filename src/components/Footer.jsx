@@ -88,33 +88,16 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-primary" />
                 <a
-                  href="mailto:contact@moncoach-informatique.fr"
+                  href="mailto:contact@moncoachinformatique.fr"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  contact@moncoach-informatique.fr
+                  contact@moncoachinformatique.fr
                 </a>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-primary" />
                 <span className="text-gray-300">Nantes & agglomération</span>
               </div>
-            </div>
-
-            {/* Social Links */}
-            <div className="flex items-center space-x-4 mt-6">
-              <span className="text-gray-300 text-sm">Suivez-moi :</span>
-              {socialLinks.map((social) => (
-                <motion.a
-                  key={social.name}
-                  href={social.url}
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
-                  className={`text-gray-400 ${social.color} transition-colors p-2 rounded-lg hover:bg-gray-800`}
-                  aria-label={social.name}
-                >
-                  <social.icon className="h-5 w-5" />
-                </motion.a>
-              ))}
             </div>
           </motion.div>
 
@@ -165,6 +148,53 @@ const Footer = () => {
               ))}
             </ul>
           </motion.div>
+
+          {/* Documents Légaux */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.6, duration: 0.6 }}
+          >
+            <h4 className="font-poppins font-semibold text-lg mb-6">
+              Documents Légaux
+            </h4>
+            <ul className="space-y-3">
+              <li>
+                <a
+                  href="/Mentions légales.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-white transition-colors hover:translate-x-1 transform duration-200 block flex items-center space-x-2"
+                >
+                  <span>Mentions légales</span>
+                  <ExternalLink size={14} />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/Politique de confidentialité.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-white transition-colors hover:translate-x-1 transform duration-200 block flex items-center space-x-2"
+                >
+                  <span>Politique de confidentialité</span>
+                  <ExternalLink size={14} />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/Conditions Générales de Vente.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-white transition-colors hover:translate-x-1 transform duration-200 block flex items-center space-x-2"
+                >
+                  <span>Conditions Générales</span>
+                  <ExternalLink size={14} />
+                </a>
+              </li>
+            </ul>
+          </motion.div>
         </div>
       </div>
 
@@ -182,24 +212,33 @@ const Footer = () => {
 
             {/* Legal Links */}
             <div className="flex items-center space-x-6 text-sm">
-              <button
-                onClick={() => (window.location.hash = "404")}
-                className="text-gray-400 hover:text-white transition-colors"
+              <a
+                href="/Mentions légales.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors flex items-center space-x-1"
               >
-                Mentions légales
-              </button>
-              <button
-                onClick={() => (window.location.hash = "404")}
-                className="text-gray-400 hover:text-white transition-colors"
+                <span>Mentions légales</span>
+                <ExternalLink size={12} />
+              </a>
+              <a
+                href="/Politique de confidentialité.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors flex items-center space-x-1"
               >
-                Politique de confidentialité
-              </button>
-              <button
-                onClick={() => (window.location.hash = "404")}
-                className="text-gray-400 hover:text-white transition-colors"
+                <span>Politique de confidentialité</span>
+                <ExternalLink size={12} />
+              </a>
+              <a
+                href="/Conditions Générales de Vente.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors flex items-center space-x-1"
               >
-                CGV
-              </button>
+                <span>CGV</span>
+                <ExternalLink size={12} />
+              </a>
             </div>
           </div>
         </div>
