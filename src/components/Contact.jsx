@@ -335,8 +335,6 @@ const Contact = () => {
                     <option value="formation-office">
                       Formation Microsoft 365
                     </option>
-                    <option value="securite-mails">Sécurité & Emails</option>
-                    <option value="atelier-collectif">Atelier collectif</option>
                     <option value="achat-pc">Aide achat PC</option>
                     <option value="installation">Installation & Config</option>
                     <option value="autre">Autre demande</option>
