@@ -64,7 +64,7 @@ const Hero = () => {
               transition={{ delay: 0.2, duration: 0.6 }}
               className="font-poppins font-bold text-4xl md:text-5xl lg:text-6xl text-gray-900 leading-tight mb-6"
             >
-              Mon Coach <span className="text-primary">Informatique</span>
+              Mon Coach <span className="text-primary">Informaclique</span>
             </motion.h1>
 
             <motion.p

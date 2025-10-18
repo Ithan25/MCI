@@ -29,7 +29,7 @@ const Testimonials = () => {
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Découvrez le témoignage d'un de mes clients satisfaits. Particuliers
-            et seniors font confiance à Mon Coach Informatique pour leur
+            et seniors font confiance à Mon Coach Informaclique pour leur
             apprentissage numérique.
           </p>
         </motion.div>

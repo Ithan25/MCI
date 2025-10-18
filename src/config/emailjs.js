@@ -1,4 +1,4 @@
-// Configuration EmailJS pour Mon Coach Informatique
+// Configuration EmailJS pour Mon Coach Informaclique
 //
 // INSTRUCTIONS POUR CONFIGURER EMAILJS :
 //
@@ -36,5 +36,5 @@ Message :
 {{message}}
 
 Cordialement,
-Système de contact Mon Coach Informatique
+Système de contact Mon Coach Informaclique
 */

@@ -69,7 +69,7 @@ const Footer = () => {
               </div>
               <div>
                 <h3 className="font-poppins font-bold text-xl">
-                  Mon Coach Informatique
+                  Mon Coach Informaclique
                 </h3>
                 <p className="text-gray-300">
                   L'informatique, simple comme un clic
@@ -205,7 +205,7 @@ const Footer = () => {
             {/* Copyright */}
             <div className="flex items-center space-x-2 text-gray-400 text-sm">
               <span>
-                © {currentYear} Mon Coach Informatique (MCI). Tous droits
+                © {currentYear} Mon Coach Informaclique (MCI). Tous droits
                 réservés.
               </span>
             </div>

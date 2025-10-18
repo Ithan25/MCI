@@ -43,7 +43,7 @@ const Header = () => {
             </div>
             <div className="hidden sm:block">
               <h1 className="font-bold text-lg text-gray-900">
-                Mon Coach Informatique
+                Mon Coach Informaclique
               </h1>
               <p className="text-sm text-gray-600">
                 L'informatique, simple comme un clic
